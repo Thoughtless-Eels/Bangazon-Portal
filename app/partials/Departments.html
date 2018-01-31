@@ -1,3 +1,21 @@
 <div>
         <h1>Departments</h1>
+
+        <div>
+            <h3>Create New Department</h3>
+            <input type="text" ng-model="deptName">
+            <input type="text" ng-model="deptBudget">
+            <button ng-click="makeDept(deptName, deptBudget)">submit</button>
+        </div>
+
+        <div>
+            <h3>Show Departments</h3>
+            <button ng-click="showDepts()">display</button>
+        </div>
+
+        <div>
+            <h3>Delete Department</h3>
+            <input type="text" ng-model="deptId">
+            <button ng-click="deleteDept(deptId)">Delete</button>
+        </div>
 </div>

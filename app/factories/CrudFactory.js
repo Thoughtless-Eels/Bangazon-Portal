@@ -2,7 +2,6 @@
 angular.module("Bangazon")
     // naming the factory, passing in appropriate angular methods
     .factory("CrudFactory", function ($http, $timeout, $location, $route) {
-        const bangazonURL = "http://bangazon.com:5000/api"
         return Object.create(null, {
             "cache": {
                 value: null,
@@ -20,24 +19,19 @@ angular.module("Bangazon")
                 }
             },
             "POST": {
-                value: function (urlString) {
-                    return $http({
-                        method: "POST",
-                        url: `${urlString}/` //fill in this url
-                    
-                    }).then(response => {
+                value: function (urlString, JSONOBJ) {
+                    return $http.post(urlString, JSONOBJ).then(response => {
                     // CODE  GOES HERE
                     return response
-                }).catch(function (error) {
-                    window.alert("Couldn't fetch Data")
-                })
-            }},
+                    })
+                }
+            },
             "PUT": {
-                value: function (urlString, jSawnObj) {
+                value: function (urlString, JSONOBJ) {
                     return $http({
                         method: "PUT",
                         url: `${urlString}`,
-                        data: {jSawnObj}
+                        data: JSONOBJ
                     }).then(response => {
                         // CODE  GOES HERE
                         return response
