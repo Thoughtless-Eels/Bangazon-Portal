@@ -1,7 +1,7 @@
 // ┌(° ͜ʖ͡°)┘
 
 angular.module("Bangazon")
-    .controller("FormController", function ($scope, $location, CrudFactory) {
+    .controller("OrderController", function ($scope, $location, CrudFactory) {
         CrudFactory.POST()
     })
 
