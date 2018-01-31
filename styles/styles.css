@@ -2,6 +2,100 @@
 /* you say tomato, I say css */
 
 .justALittleGrid {
-    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "navSection"
+    "Body"
+    ;
 }
+
+.navWrap {
+    grid-area: navSection;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "navTitle"
+    "navButtons"
+    ;
+}
+
+.navHead {
+    grid-area: navTitle;
+    text-align:center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "mainHead"
+    "subHead"
+    "subHead2"
+    ;
+}
+
+.navHead:nth-child(1) {
+    grid-area: mainHead;
+}
+.navHead:nth-child(2) {
+    grid-area: subHead;
+}
+.navHead:nth-child(3) {
+    grid-area: subHead2;
+}
+
+.navLinks {
+    grid-area: navButtons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "one two three four five six seven eight"
+    ;
+}
+
+
+.navLinks:nth-child(1) {
+    grid-area: one;
+    justify-self: center;
+    align-self: center;
+}
+
+.navLinks:nth-child(2) {
+    grid-area: two;
+    justify-self: center;
+    align-self: center;
+}
+
+.navLinks:nth-child(3) {
+    grid-area: three;
+    justify-self: center;
+    align-self: center;
+}
+
+.navLinks:nth-child(4) {
+    grid-area: four;
+    justify-self: center;
+    align-self: center;
+}
+
+.navLinks:nth-child(5) {
+    grid-area: five;
+    justify-self: center;
+    align-self: center;
+}
+
+.navLinks:nth-child(6) {
+    grid-area: six;
+    justify-self: center;
+    align-self: center;
+}
+
+.navLinks:nth-child(7) {
+    grid-area: seven;
+    justify-self: center;
+    align-self: center;
+}
+
+.navLinks:nth-child(8) {
+    grid-area: eight;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
 
