@@ -1,7 +1,7 @@
 // ┌(° ͜ʖ͡°)┘
 
-angular.module("StockApp")
-    .controller("StocksDashCtrl", function ($scope, $location, CrudFactory) {
+angular.module("Bangazon")
+    .controller("ProductController", function ($scope, $location, CrudFactory) {
         CrudFactory.GET()
     })
 

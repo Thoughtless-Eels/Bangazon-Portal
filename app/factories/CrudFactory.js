@@ -23,9 +23,9 @@ angular.module("Bangazon")
                         value: function () {
                             return $http({
                                     method: "POST",
-                                    url: `${bangazonURL}/` //fill in this url,
-                                }
-                            }).then(response => {
+                                    url: `${bangazonURL}/` //fill in this url
+                            )
+                            }}.then(response => {
                             // CODE  GOES HERE
                             return this.cache
                         }).catch(function (error) {

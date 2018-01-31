@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bangazon</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-    
+
+<body ng-app="Bangazon" ng-cloak>
+
+    <nav ng-include="'app/partials/navigation.html'">
+
+    </nav>
+
+    <div ng-view id="bodyDiv" class="container">
+        <!-- ( ° ͜ʖ͡°)╭n╮ -->
+
+
+        <!-- CDNs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <!-- app files  -->
+        <script src="./app/app.js"></script>
+        <!-- nav -->
+        <script src="./app/navigation/controllers/NavigationCtrl.js"></script>
+        <!-- Products -->
+        <script src="./app/factories/CrudFactory.js"></script>
+        <script src="./app/controllers/FormController.js"></script>
+        <script src="./app/controllers/ProductController.js"></script>
 </body>
+
 </html>
