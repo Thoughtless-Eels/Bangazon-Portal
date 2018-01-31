@@ -7,5 +7,5 @@ Eels:
 - cd into bangazon portal
 - mkdir lib
 - cd into lib
-- npm install 
+- run these commands: npm init, npm install angular, npm install angular-route
 
