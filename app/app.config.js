@@ -5,6 +5,10 @@ angular.module("Bangazon").config(function ($routeProvider) {
         templateUrl: "app/partials/Products.html",
         controller: "ProductController",
     })
+    .when('/partials/Welcome', {
+        templateUrl: "app/partials/Welcome.html",
+        controller: 'WelcomeController',
+    })
     .when('/partials/Computers', {
         templateUrl: "app/partials/Computers.html",
         controller: 'ComputerController',
@@ -16,6 +20,10 @@ angular.module("Bangazon").config(function ($routeProvider) {
     .when('/partials/Customers', {
         templateUrl: "app/partials/Customers.html",
         controller: 'CustomerController',
+    })
+    .when('/partials/Departments', {
+        templateUrl: "app/partials/Departments.html",
+        controller: 'DepartmentController',
     })
     .when('/partials/Orders', {
         templateUrl: "app/partials/Orders.html",

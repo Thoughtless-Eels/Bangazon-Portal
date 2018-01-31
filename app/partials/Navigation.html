@@ -1,12 +1,16 @@
-<div>
+<div ng-controller="NavController">
     
-    <ul>
-         
-        <li><a href="/#!/Products" class="">Bangazon</a></li>
-        <li><a href="/#!/">Submit a New Product</a></li>
-        <li><a href="#!/">View Products</a></li>
-        <li><a href="#!/">Something</a></li>
-    </ul>
+    <div>
+        <div><button ng-click="toDepartments()">Departments</button></div>
+        <div><button ng-click="toEmployees()">Employees</button></div>
+        <div><button ng-click="toCustomers()">Customers</button></div>
+        <div><button ng-click="toProducts()">Products</button></div>
+        <div><button ng-click="toOrders()">Orders</button></div>
+        <div><button ng-click="toComputers()">Computers</button></div>
+        <div><button ng-click="toTrainingPrograms()">Training Programs</button></div>        
+        <div><button ng-click="toProductTypes()">Product Types</button></div>
+        <div><button ng-click="toPaymentTypes()">Payment Types</button></div>
+    </div>
 
 </div>
 
